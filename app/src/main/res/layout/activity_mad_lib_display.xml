@@ -15,7 +15,6 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:id="@+id/displayMadLibsTextView"
         android:layout_alignParentTop="true"
-        android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_alignParentRight="true"

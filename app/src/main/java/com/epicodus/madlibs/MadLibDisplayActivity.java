@@ -21,7 +21,8 @@ public class MadLibDisplayActivity extends AppCompatActivity {
         String noun = intent.getStringExtra("noun");
         String adjective = intent.getStringExtra("adjective");
         String verb = intent.getStringExtra("verb");
-        mDisplayMadLibsTextView.setText("Here  are all the restaurants near: " + noun + adjective + verb);
+        String madLib = ("Here is our story. One time a "  + noun + " with " +  adjective + " fur" + "something something something" +  verb);
+        mDisplayMadLibsTextView.setText(madLib);
 
 
     }
