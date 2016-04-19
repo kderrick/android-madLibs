@@ -1,5 +1,6 @@
 package com.epicodus.madlibs;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -33,6 +34,11 @@ public class MainActivity extends AppCompatActivity {
                 Log.d(TAG, adjective);
                 Log.d(TAG, verb);
 
+                Intent intent = new Intent(MainActivity.this, MadLibDisplayActivity.class);
+                intent.putExtra("noun", noun);
+                intent.putExtra("adjective", adjective);
+                intent.putExtra("verb", verb);
+                startActivity(intent);
             }
         });
     }
