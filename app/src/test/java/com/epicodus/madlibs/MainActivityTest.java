@@ -38,4 +38,5 @@ public class MainActivityTest {
         Intent actualIntent = shadowActivity.getNextStartedActivity();
         assertTrue(actualIntent.filterEquals(expectedIntent));
     }
+
 }
